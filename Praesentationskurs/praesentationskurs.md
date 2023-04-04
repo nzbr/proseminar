@@ -288,7 +288,7 @@ rather than on paper'' [\textbf{?}]
 
 - Quellen werden in einer `\thebibliography` Umgebung angegeben [@overleaf-bibtex]
 - Mit `\cite{key}` wird eine Referenz zur Quelle \enquote{key} eingefügt [@overleaf-bibtex]
-- Die Referenz wird als \mbox{\lmr [\textbf{?}]} angezeigt? Das ist nicht richig!
+- Die Referenz wird als \mbox{\lmr [\textbf{?}]} angezeigt? Das ist nicht richtig!
 
 \textcolor{foreground-secondary}{\tiny Der Eintrag wurde aus Platzgründen gekürzt. Der vollständige Eintrag ist unter \cite{latex} im Quellenverzeichnis zu finden.}
 
