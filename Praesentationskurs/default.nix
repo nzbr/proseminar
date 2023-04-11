@@ -14,9 +14,7 @@ mkCopperflamePandoc {
   src = ./.;
 
   buildPhase = ''
-    for mode in light dark; do
-        pandoc --to=beamer praesentationskurs.md -o "praesentationskurs-''${mode}.tex" --template="''${copperflame}/pandoc/copperflame-''${mode}.tex" --highlight-style="''${copperflame}/pandoc/copperflame-''${mode}.theme" --biblatex --filter pandoc-filter-copperflame-latex
-    done
+    pandoc --to=beamer praesentationskurs.md -o "praesentationskurs.tex" --template="''${copperflame}/pandoc/copperflame-light.tex" --highlight-style="''${copperflame}/pandoc/copperflame-light.theme" --biblatex --filter pandoc-filter-copperflame-latex
 
     latexmk -xelatex *.tex
     for x in *.tex; do

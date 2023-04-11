@@ -1,6 +1,5 @@
 ---
-title: "B5: Wissenschaftliches Schreiben mit \\LaTeX\\ und \\BibTeX"
-subtitle: "Wie funktionieren diese Werkzeuge, Literaturverwaltung mit \\BibTeX/jabref, wo bekommen wir (fehlerfreies?) \\BibTeX?"
+title: "Wissenschaftliches Schreiben mit \\LaTeX und \\BibTeX"
 author: "Nico Jansen"
 date: \today
 lang: "de-DE"
@@ -84,13 +83,6 @@ include-before:
 
 # Ein erstes Beispiel
 
-\newcommand\beispielDvi{
-    \textattachfile[mimetype=application/x-dvi]{beispiele/beispiel.dvi}{\link{beispiel.dvi}}
-}
-\newcommand\beispielPdf{
-    \textattachfile[mimetype=application/x-pdf]{beispiele/beispiel.pdf}{\link{beispiel.pdf}}
-}
-
 :::{.minipage width=0.66}
 ```latex
 \documentclass[a4paper]{article}
@@ -110,12 +102,9 @@ include-before:
 ```terminal
 $ latex beispiel.tex
 ```
-Erzeugt \beispielDvi.
-Diese kann zu \beispielPdf konvertiert werden[@ctan-dvipdfmx]:
-```terminal
-$ dvipdfmx beispiel.dvi
-```
-_pdflatex_[@ctan-pdftex], _xelatex_[@ctan-xetex] und _lualatex_[@ctan-luatex] geben in einem Schritt PDF aus.\
+Erzeugt `beispiel.dvi`.\
+\
+_pdflatex_[@ctan-pdftex], _xelatex_[@ctan-xetex] und _lualatex_[@ctan-luatex] geben PDF aus.\
 (\hologo{XeTeX} und \hologo{LuaTeX} unterstützen auch Unicode und TrueType Schriftarten).
 
 ---
@@ -151,8 +140,6 @@ _Zum Überschreiben_: `\renewcommand` und `\renewenvironment`[@latex]
 \textit{kursiv}, {\itshape kursiv} \\
 \textsl{geneigt}, {\slshape geneigt}\\
 \texttt{mono}, {\ttfamily mono} \\
-\alert{hervorgehoben} \\
-\underline{unterstrichen} \\
 \emph{sehr \emph{sehr} wichtig} \\
 Fußnoten\footnote{Hier unten!} \\
 \small klein \large groß
@@ -166,8 +153,6 @@ Fußnoten\footnote{Hier unten!} \\
 \textit{kursiv}, {\itshape kursiv} \\
 \textsl{geneigt}, {\slshape geneigt}\\
 {\lmtt mono}, {\lmtt mono} \\
-\alert{hervorgehoben} \\
-\underline{unterstrichen} \\
 \emph{sehr \emph{sehr} wichtig} \\
 Fußnoten\footnote{\lmr Hier unten!} \\
 \small klein \large groß
@@ -227,13 +212,13 @@ Daher ist \(x=4\). % oder $...$
   \sqrt{\left(\frac{p}{2}\right)^2-q}
 \] % oder $$...$$
 \begin{align*}
-    0 =& 5x + 25 \tag{$-25$} \\
-    -25 =& 5x \tag{$/-5$} \\
-    5 =& x
+  0   =& 5x + 25 && -25 \\
+  -25 =& 5x      && /-5 \\
+  5   =& x
 \end{align*}
 $$ \sum\limits_{i=1}^n i 
    \leq \prod\limits_{i=1}^n i $$
-$\in, \cup, \cap, \land, \lor, \pi$
+$ \in, \cup, \cap, \land, \lor, \pi $
 ```
 :::
 :::{.minipage width=0.33}
@@ -244,13 +229,13 @@ Daher ist \(x=4\). % oder $...$
     \sqrt{\left(\frac{p}{2}\right)^2-q}
 \] % oder $$...$$
 \begin{align*}
-    0 =&\ 5x + 25 \tag{$-25$} \\
-    -25 =&\ 5x \tag{$/-5$} \\
-    5 =&\ x
+  0   =& 5x + 25 && -25 \\
+  -25 =& 5x      && /-5 \\
+  5   =& x
 \end{align*}
 $$ \sum\limits_{i=1}^n i 
    \leq \prod\limits_{i=1}^n i $$
-$\in, \cup, \cap, \land, \lor, \pi$
+$ \in, \cup, \cap, \land, \lor, \pi $
 \end{Output}
 :::
 
@@ -286,9 +271,9 @@ rather than on paper'' [\textbf{?}]
 \end{Output}
 :::
 
-- Quellen werden in einer `\thebibliography` Umgebung angegeben [@overleaf-bibtex]
-- Mit `\cite{key}` wird eine Referenz zur Quelle \enquote{key} eingefügt [@overleaf-bibtex]
-- Die Referenz wird als \mbox{\lmr [\textbf{?}]} angezeigt? Das ist nicht richtig!
+- Quellen in `\thebibliography` angegeben [@overleaf-bibtex]
+- `\cite{key}` fügt Referenz zu \enquote{key} ein [@overleaf-bibtex]
+- Referenzen werden noch nicht richtig aufgelöst, sondern als \mbox{\lmr [\textbf{?}]} angezeigt
 
 \textcolor{foreground-secondary}{\tiny Der Eintrag wurde aus Platzgründen gekürzt. Der vollständige Eintrag ist unter \cite{latex} im Quellenverzeichnis zu finden.}
 
@@ -324,14 +309,16 @@ rather than on paper'' [1]
 :::
 
 - \LaTeX\ muss zweimal ausgeführt werden [@overleaf-bibtex]
-- Beim ersten Durchlauf wird in \enquote{zitate.aux} geschrieben, welche `\bibitems` es gibt [@overleaf-bibtex]
+    1. Verweise werden in \enquote{zitate.aux} geschrieben
+    2. Verweise werden aus \enquote{zitate.aux} gelesen und korrekt aufgelöst 
 
 ---
 
 # \BibTeX
 
+Ersetzt `thebibliography` mit einer `.bib` Datei [@overleaf-bibtex] \
+
 :::{.minipage width=0.495}
-zitate.tex
 ```latex
 \documentclass{article}
 \begin{document}
@@ -347,7 +334,6 @@ zitate.tex
 \phantom{x}
 :::
 :::{.minipage width=0.495}
-zitate.bib
 ```bibtex
 @Book{latex,
   author = {Leslie Lamport},
@@ -356,8 +342,8 @@ zitate.bib
   title = {\LaTeX ...},
   year = {1994},
 }
- 
 ```
+\centering{\textcolor{foreground-secondary}{\scriptsize zitate.bib}}
 :::
 
 \vspace{0.2\baselineskip}
@@ -374,36 +360,31 @@ $ xelatex zitate.tex
 \phantom{x}
 :::
 :::{.minipage width=0.495}
-\phantom{x}\small oder mit einem build-tool: \cite{ctan-latexmk}\cite{tectonic}
-```terminal
-$ latexmk -xelatex zitate.tex
-# oder
-$ tectonic zitate.tex
-```
+\begin{flushleft}
+In einem Schritt mit Build-Tools wie \mbox{\emph{latexmk}}\cite{ctan-latexmk} oder \mbox{\emph{tectonic}}\cite{tectonic}
+\end{flushleft}
 :::
 
 ---
 
 # \BibTeX\ - Einträge und Felder
 
-Verschiedene Arten von Einträgen unterstützen verschiedene Felder [@bibtex]
-
-:::{.minipage width=0.66}
+:::{.minipage width=0.7}
 | Eintragstyp | Beschreibung |
 | ---- | ---- |
-| article | Artikel (in einer Zeitschrift) \cite{bibtex} |
-| book | Ein Buch mit Verlag \cite{bibtex} |
-| booklet | Ein Buch ohne Verlag \cite{bibtex} |
-| inbook | Teil eines Buches \cite{bibtex} |
-| incollection | Teil eines Sammelbandes \cite{bibtex} |
-| manual | Dokumentationen, Anleitungen \cite{bibtex} |
-| mastersthesis | Masterarbeit \cite{bibtex} |
-| phdthesis | Doktorarbeit \cite{bibtex} |
-| techreport | Technischer Bericht \cite{bibtex} |
-| unpublished | Unveröffentlichte Arbeit \cite{bibtex} |
-| misc | Alles andere \cite{bibtex} |
+| \@Article | Artikel (in einer Zeitschrift) \cite{bibtex} |
+| \@Book | Ein Buch mit Verlag \cite{bibtex} |
+| \@Booklet | Ein Buch ohne Verlag \cite{bibtex} |
+| \@InBook | Teil eines Buches \cite{bibtex} |
+| \@InCollection | Teil eines Sammelbandes \cite{bibtex} |
+| \@Manual | Dokumentationen, Anleitungen \cite{bibtex} |
+| \@MastersThesis | Masterarbeit \cite{bibtex} |
+| \@PhdThesis | Doktorarbeit \cite{bibtex} |
+| \@Techreport | Technischer Bericht \cite{bibtex} |
+| \@Unpublished | Unveröffentlichte Arbeit \cite{bibtex} |
+| \@Misc | Alles andere \cite{bibtex} |
 :::
-:::{.minipage width=0.33}
+:::{.minipage width=0.3}
 \phantom{m}Einige Felder: [@bibtex]
 
 - author
@@ -422,34 +403,59 @@ Verschiedene Arten von Einträgen unterstützen verschiedene Felder [@bibtex]
 \vfill
 :::
 
+Je nach Eintragstyp werden verschiedene Felder unterstützt [@bibtex]
+
 ---
 
 # Quellen für \BibTeX\ Einträge
+:::{.minipage width=0.7}
+Einträge können aus Suchmaschinen kopiert werden:\
 
-Viele wissenschaftlich ausgerichtete Suchmaschinen bieten die Möglichkeit \BibTeX\ Einträge zu kopieren \cite{google-scholar}\cite{dblp} \
+- Google Scholar [@google-scholar]
+- IEEE Xplore [@ieee-xplore]
+- DBLP\normalsize\ [@dblp]
+  - Auf Informatik spezialisierte Literaturdatenbank
+  - Über 6.000.000 Einträge
+  - Alle Einträge werden manuell geprüft
+    - Hohe Qualität gegenüber anderen Angeboten
 
-## DBLP [@dblp]
+:::
+:::{.minipage width=0.3}
+  \vfill
 
-- [\link{dblp.org}](https://dblp.org/)
-- Auf Informatik spezialisierte Literaturdatenbank
-- Über 6.000.000 Einträge
+  \centering{\scriptsize Google Scholar}
+  \hfill \includegraphics[width=.8\textwidth]{google-scholar.png}
 
+  \vspace{.5\baselineskip}
+  
+  \centering{\scriptsize IEEE Xplore}
+  \hfill \includegraphics[width=.8\textwidth]{ieee.png}
+
+  \vspace{.5\baselineskip}
+  
+  \centering{\scriptsize DBLP}
+  \includegraphics[width=\textwidth]{dblp.png}
+:::
 
 ---
 
-# JabRef [@jabref]
+# JabRef
 
-- GUI Editor für `.bib`-Dateien
+:::{.minipage width=0.4}
+- GUI Editor für `.bib`-Dateien [@jabref]
 - Bietet eine Suchfunktion für einige wissenschaftliche Datenbanken
   - Unter anderem DBLP
   - Gefundene Einträge können direkt importiert werden
-
+:::
+:::{.minipage width=0.6}
+  \includegraphics[width=\textwidth]{jabref.png}
+:::
 ---
 
 # \BibLaTeX
 
 - Neuentwicklung des Zitiersystems von \LaTeX [@ctan-biblatex]
-- Bessere Unterstützung für Sprachen außer Englisch [@ctan-biblatex]
+- Bessere Unterstützung für Sprachen neben Englisch [@ctan-biblatex]
 - Zusätzliche Eintragstypen wie `@online`, `@software` und `@dataset` [@biblatex]
 - Kompatibel mit \BibTeX\ Einträgen [@biblatex]
 
@@ -467,7 +473,7 @@ Viele wissenschaftlich ausgerichtete Suchmaschinen bieten die Möglichkeit \BibT
 ```
 :::
 :::{.minipage width=0.33}
-- Biblatex muss als Paket geladen werden [@biblatex]
-  - Der Stil wird als optionales Argument an usepackage übergeben 
-- Beim Kompilieren wird `bibtex` durch `biber` ersetzt [@biblatex]
+- Muss als Paket geladen werden [@biblatex]
+  - Stil wird als Argument übergeben 
+- `bibtex` wird durch `biber` ersetzt [@biblatex]
 :::

@@ -19,8 +19,8 @@
 \definecolor{base0B}{HTML}{569CD6}
 \definecolor{base0C}{HTML}{718C48}
 \definecolor{base0D}{HTML}{40AB31}
-\definecolor{base0E}{HTML}{7F5CFF}
-\definecolor{base0F}{HTML}{755DB4}
+\definecolor{base0E}{HTML}{755DB4}
+\definecolor{base0F}{HTML}{736299}
 \definecolor{baseF0}{HTML}{001100}
 \definecolor{baseF1}{HTML}{001B00}
 \definecolor{baseF2}{HTML}{003000}
@@ -80,16 +80,13 @@
 \usepackage{beamerbaseoverlay}
 
 \hypersetup{
-        pdftitle={B5: Wissenschaftliches Schreiben mit ~und },
+        pdftitle={Wissenschaftliches Schreiben mit und },
             pdfauthor={Nico Jansen},
             pdflang={de-DE},
             pdfcreator={LaTeX via pandoc using the copperflame theme},
 }
 
-\title{B5: Wissenschaftliches Schreiben mit \LaTeX~und \textsc{Bib}\TeX}
-\subtitle{Wie funktionieren diese Werkzeuge, Literaturverwaltung mit
-\textsc{Bib}\TeX/jabref, wo bekommen wir (fehlerfreies?)
-\textsc{Bib}\TeX?}
+\title{Wissenschaftliches Schreiben mit \LaTeX und \textsc{Bib}\TeX}
 \author{Nico Jansen}
 \date{\today}
 
@@ -107,7 +104,7 @@
 \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.44,0.55,0.28}{#1}}
 \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.34,0.61,0.84}{#1}}
 \newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.25,0.67,0.19}{\textbf{#1}}}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.46,0.36,0.71}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.45,0.38,0.60}{#1}}
 \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.57,0.57,0.57}{\textit{#1}}}
 \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.25,0.67,0.19}{\textit{#1}}}
 \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.34,0.61,0.84}{#1}}
@@ -125,11 +122,11 @@
 \newcommand{\NormalTok}[1]{\textcolor[rgb]{0.19,0.19,0.19}{#1}}
 \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.19,0.19,0.19}{#1}}
 \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.19,0.19,0.19}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.50,0.36,1.00}{#1}}
-\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.50,0.36,1.00}{#1}}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.50,0.36,1.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.50,0.36,1.00}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.46,0.36,0.71}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.46,0.36,0.71}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.46,0.36,0.71}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.46,0.36,0.71}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.45,0.38,0.60}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.45,0.38,0.60}{#1}}
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.44,0.55,0.28}{#1}}
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.19,0.19,0.19}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.93,0.31,0.35}{#1}}
@@ -148,7 +145,7 @@
     left=0.5em, right=0.5em, top=0.5em, bottom=0.5em,
     arc=0.5em,
     auto outer arc,
-interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1h00crxi846-copperflame/assets/acrylic-texture.png}},
+interior style={fill tile image*={height=64pt}{/nix/store/0japjbcx259wld5919pwfavxisbfsavr-copperflame/assets/acrylic-texture.png}},
     drop fuzzy shadow=shadow
 }
 % ===== END PANDOC =====
@@ -174,7 +171,7 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
     Scale=1
 ]
 \newfontfamily{\dosfont}{less-perfect-dos-vga}[
-    Path = /nix/store/2q3f42n9lbfaqass2qdsxymph7bsral6-perfect-dos-vga/share/fonts/truetype/,
+    Path = /nix/store/kk8agc06yclp5aw3g8b2a235p0f4r9js-perfect-dos-vga/share/fonts/truetype/,
     Extension = .ttf,
     NFSSFamily=dosfont,
     Scale=1.2
@@ -287,7 +284,7 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
     sharp corners,
     nobeforeafter,
     top = 4pt, bottom = 4pt,
-    interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1h00crxi846-copperflame/assets/acrylic-texture.png}},
+    interior style={fill tile image*={height=64pt}{/nix/store/0japjbcx259wld5919pwfavxisbfsavr-copperflame/assets/acrylic-texture.png}},
     fuzzy shadow={0mm}{-2pt}{0mm}{0.5pt}{shadow}
 }
 \setbeamertemplate{frametitle}{%
@@ -427,13 +424,6 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
 
     \begin{frame}[fragile]{Ein erstes Beispiel}
     \protect\hypertarget{ein-erstes-beispiel}{}
-    \newcommand\beispielDvi{
-        \textattachfile[mimetype=application/x-dvi]{beispiele/beispiel.dvi}{\link{beispiel.dvi}}
-    }
-    \newcommand\beispielPdf{
-        \textattachfile[mimetype=application/x-pdf]{beispiele/beispiel.pdf}{\link{beispiel.pdf}}
-    }
-
     \begin{minipage}{0.66\textwidth}
 
 \begin{Shaded}
@@ -470,22 +460,11 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
 \end{Highlighting}
 \end{Shaded}
 
-    Erzeugt
-        \textattachfile[mimetype=application/x-dvi]{beispiele/beispiel.dvi}{\alert{\underline{beispiel.dvi}}}.
-    Diese kann zu
-        \textattachfile[mimetype=application/x-pdf]{beispiele/beispiel.pdf}{\alert{\underline{beispiel.pdf}}} konvertiert
-    werden\autocite{ctan-dvipdfmx}:
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{$ dvipdfmx beispiel.dvi}
-\end{Highlighting}
-\end{Shaded}
-
+    Erzeugt \texttt{beispiel.dvi}.\\
+    \strut \\
     \emph{pdflatex}\autocite{ctan-pdftex},
     \emph{xelatex}\autocite{ctan-xetex} und
-    \emph{lualatex}\autocite{ctan-luatex} geben in einem Schritt PDF
-    aus.\\
+    \emph{lualatex}\autocite{ctan-luatex} geben PDF aus.\\
     (\hologo{XeTeX} und \hologo{LuaTeX} unterstützen auch Unicode und
     TrueType Schriftarten).
     \end{frame}
@@ -543,8 +522,6 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
 \FunctionTok{\textbackslash{}textit}\NormalTok{\{kursiv\}, \{}\FunctionTok{\textbackslash{}itshape}\NormalTok{ kursiv\} }\FunctionTok{\textbackslash{}\textbackslash{}}
 \FunctionTok{\textbackslash{}textsl}\NormalTok{\{geneigt\}, \{}\FunctionTok{\textbackslash{}slshape}\NormalTok{ geneigt\}}\FunctionTok{\textbackslash{}\textbackslash{}}
 \FunctionTok{\textbackslash{}texttt}\NormalTok{\{mono\}, \{}\FunctionTok{\textbackslash{}ttfamily}\NormalTok{ mono\} }\FunctionTok{\textbackslash{}\textbackslash{}}
-\FunctionTok{\textbackslash{}alert}\NormalTok{\{hervorgehoben\} }\FunctionTok{\textbackslash{}\textbackslash{}}
-\FunctionTok{\textbackslash{}underline}\NormalTok{\{unterstrichen\} }\FunctionTok{\textbackslash{}\textbackslash{}}
 \FunctionTok{\textbackslash{}emph}\NormalTok{\{sehr }\FunctionTok{\textbackslash{}emph}\NormalTok{\{sehr\} wichtig\} }\FunctionTok{\textbackslash{}\textbackslash{}}
 \NormalTok{Fußnoten}\FunctionTok{\textbackslash{}footnote}\NormalTok{\{Hier unten!\} }\FunctionTok{\textbackslash{}\textbackslash{}}
 \FunctionTok{\textbackslash{}small}\NormalTok{ klein }\FunctionTok{\textbackslash{}large}\NormalTok{ groß}
@@ -564,8 +541,6 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
     \textit{kursiv}, {\itshape kursiv} \\
     \textsl{geneigt}, {\slshape geneigt}\\
     {\fontfamily{lmtt}\selectfont mono}, {\fontfamily{lmtt}\selectfont mono} \\
-    \alert{hervorgehoben} \\
-    \underline{unterstrichen} \\
     \emph{sehr \emph{sehr} wichtig} \\
     Fußnoten\footnote{\fontfamily{lmr}\selectfont Hier unten!} \\
     \small klein \large groß
@@ -641,13 +616,13 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
 \SpecialStringTok{  }\SpecialCharTok{\textbackslash{}sqrt}\SpecialStringTok{\{}\SpecialCharTok{\textbackslash{}left}\SpecialStringTok{(}\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{p\}\{2\}}\SpecialCharTok{\textbackslash{}right}\SpecialStringTok{)\^{}2{-}q\}}
 \SpecialStringTok{\textbackslash{}]} \CommentTok{\% oder $$...$$}
 \KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{align*}\NormalTok{\}}
-\SpecialStringTok{    0 =\& 5x + 25 }\SpecialCharTok{\textbackslash{}tag}\SpecialStringTok{\{}\ErrorTok{$}\SpecialStringTok{{-}25}\ErrorTok{$}\SpecialStringTok{\} }\SpecialCharTok{\textbackslash{}\textbackslash{}}
-\SpecialStringTok{    {-}25 =\& 5x }\SpecialCharTok{\textbackslash{}tag}\SpecialStringTok{\{}\ErrorTok{$}\SpecialStringTok{/{-}5}\ErrorTok{$}\SpecialStringTok{\} }\SpecialCharTok{\textbackslash{}\textbackslash{}}
-\SpecialStringTok{    5 =\& x}
+\SpecialStringTok{  0   =\& 5x + 25 \&\& {-}25 }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  {-}25 =\& 5x      \&\& /{-}5 }\SpecialCharTok{\textbackslash{}\textbackslash{}}
+\SpecialStringTok{  5   =\& x}
 \KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{align*}\NormalTok{\}}
 \SpecialStringTok{$$ }\SpecialCharTok{\textbackslash{}sum\textbackslash{}limits}\SpecialStringTok{\_\{i=1\}\^{}n i }
 \SpecialStringTok{   }\SpecialCharTok{\textbackslash{}leq}\SpecialStringTok{ }\SpecialCharTok{\textbackslash{}prod\textbackslash{}limits}\SpecialStringTok{\_\{i=1\}\^{}n i $$}
-\SpecialStringTok{$}\SpecialCharTok{\textbackslash{}in}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}cup}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}cap}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}land}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}lor}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}pi}\SpecialStringTok{$}
+\SpecialStringTok{$ }\SpecialCharTok{\textbackslash{}in}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}cup}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}cap}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}land}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}lor}\SpecialStringTok{, }\SpecialCharTok{\textbackslash{}pi}\SpecialStringTok{ $}
 \end{Highlighting}
 \end{Shaded}
 
@@ -664,13 +639,13 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
         \sqrt{\left(\frac{p}{2}\right)^2-q}
     \] % oder $$...$$
     \begin{align*}
-        0 =&\ 5x + 25 \tag{$-25$} \\
-        -25 =&\ 5x \tag{$/-5$} \\
-        5 =&\ x
+      0   =& 5x + 25 && -25 \\
+      -25 =& 5x      && /-5 \\
+      5   =& x
     \end{align*}
     $$ \sum\limits_{i=1}^n i 
        \leq \prod\limits_{i=1}^n i $$
-    $\in, \cup, \cap, \land, \lor, \pi$
+    $ \in, \cup, \cap, \land, \lor, \pi $
 
             \end{beamercolorbox}
         \end{OutputBox}
@@ -725,15 +700,14 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
     \begin{itemize}
     \tightlist
     \item
-      Quellen werden in einer \texttt{\textbackslash{}thebibliography}
-      Umgebung angegeben \autocite{overleaf-bibtex}
+      Quellen in \texttt{\textbackslash{}thebibliography} angegeben
+      \autocite{overleaf-bibtex}
     \item
-      Mit \texttt{\textbackslash{}cite\{key\}} wird eine Referenz zur
-      Quelle \enquote{key} eingefügt \autocite{overleaf-bibtex}
+      \texttt{\textbackslash{}cite\{key\}} fügt Referenz zu
+      \enquote{key} ein \autocite{overleaf-bibtex}
     \item
-      Die Referenz wird als
-      \mbox{\fontfamily{lmr}\selectfont[\textbf{?}]} angezeigt? Das ist
-      nicht richtig!
+      Referenzen werden noch nicht richtig aufgelöst, sondern als
+      \mbox{\fontfamily{lmr}\selectfont[\textbf{?}]} angezeigt
     \end{itemize}
 
     \textcolor{foreground-secondary}{\tiny Der Eintrag wurde aus Platzgründen gekürzt. Der vollständige Eintrag ist unter \cite{latex} im Quellenverzeichnis zu finden.}
@@ -784,18 +758,24 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
     \tightlist
     \item
       \LaTeX~muss zweimal ausgeführt werden \autocite{overleaf-bibtex}
-    \item
-      Beim ersten Durchlauf wird in \enquote{zitate.aux} geschrieben,
-      welche \texttt{\textbackslash{}bibitems} es gibt
-      \autocite{overleaf-bibtex}
+
+      \begin{enumerate}
+      \tightlist
+      \item
+        Verweise werden in \enquote{zitate.aux} geschrieben
+      \item
+        Verweise werden aus \enquote{zitate.aux} gelesen und korrekt
+        aufgelöst
+      \end{enumerate}
     \end{itemize}
     \end{frame}
 
     \begin{frame}[fragile]{\textsc{Bib}\TeX}
     \protect\hypertarget{section-1}{}
-    \begin{minipage}{0.495\textwidth}
+    Ersetzt \texttt{thebibliography} mit einer \texttt{.bib} Datei
+    \autocite{overleaf-bibtex}\\
 
-    zitate.tex
+    \begin{minipage}{0.495\textwidth}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -816,8 +796,6 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
 
     \end{minipage}\begin{minipage}{0.495\textwidth}
 
-    zitate.bib
-
 \begin{Shaded}
 \begin{Highlighting}[]
 \VariableTok{@Book}\NormalTok{\{}\OtherTok{latex}\NormalTok{,}
@@ -827,9 +805,10 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
   \DataTypeTok{title}\NormalTok{ = \{}\CharTok{\textbackslash{}LaTeX}\NormalTok{ ...\},}
   \DataTypeTok{year}\NormalTok{ = \{1994\},}
 \NormalTok{\}}
-\CommentTok{ }
 \end{Highlighting}
 \end{Shaded}
+
+    \centering{\textcolor{foreground-secondary}{\scriptsize zitate.bib}}
 
     \end{minipage}
 
@@ -852,47 +831,37 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
 
     \end{minipage}\begin{minipage}{0.495\textwidth}
 
-    \phantom{x}\small oder mit einem build-tool:
-    \cite{ctan-latexmk}\cite{tectonic}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{$ latexmk {-}xelatex zitate.tex}
-\NormalTok{\# oder}
-\NormalTok{$ tectonic zitate.tex}
-\end{Highlighting}
-\end{Shaded}
+    \begin{flushleft}
+    In einem Schritt mit Build-Tools wie \mbox{\emph{latexmk}}\cite{ctan-latexmk} oder \mbox{\emph{tectonic}}\cite{tectonic}
+    \end{flushleft}
 
     \end{minipage}
     \end{frame}
 
     \begin{frame}{\textsc{Bib}\TeX~- Einträge und Felder}
     \protect\hypertarget{eintruxe4ge-und-felder}{}
-    Verschiedene Arten von Einträgen unterstützen verschiedene Felder
-    \autocite{bibtex}
-
-    \begin{minipage}{0.66\textwidth}
+    \begin{minipage}{0.7\textwidth}
 
     \begin{longtable}[]{@{}ll@{}}
     \toprule()
     Eintragstyp & Beschreibung \\
     \midrule()
     \endhead
-    article & Artikel (in einer Zeitschrift) \cite{bibtex} \\
-    book & Ein Buch mit Verlag \cite{bibtex} \\
-    booklet & Ein Buch ohne Verlag \cite{bibtex} \\
-    inbook & Teil eines Buches \cite{bibtex} \\
-    incollection & Teil eines Sammelbandes \cite{bibtex} \\
-    manual & Dokumentationen, Anleitungen \cite{bibtex} \\
-    mastersthesis & Masterarbeit \cite{bibtex} \\
-    phdthesis & Doktorarbeit \cite{bibtex} \\
-    techreport & Technischer Bericht \cite{bibtex} \\
-    unpublished & Unveröffentlichte Arbeit \cite{bibtex} \\
-    misc & Alles andere \cite{bibtex} \\
+    @Article & Artikel (in einer Zeitschrift) \cite{bibtex} \\
+    @Book & Ein Buch mit Verlag \cite{bibtex} \\
+    @Booklet & Ein Buch ohne Verlag \cite{bibtex} \\
+    @InBook & Teil eines Buches \cite{bibtex} \\
+    @InCollection & Teil eines Sammelbandes \cite{bibtex} \\
+    @Manual & Dokumentationen, Anleitungen \cite{bibtex} \\
+    @MastersThesis & Masterarbeit \cite{bibtex} \\
+    @PhdThesis & Doktorarbeit \cite{bibtex} \\
+    @Techreport & Technischer Bericht \cite{bibtex} \\
+    @Unpublished & Unveröffentlichte Arbeit \cite{bibtex} \\
+    @Misc & Alles andere \cite{bibtex} \\
     \bottomrule()
     \end{longtable}
 
-    \end{minipage}\begin{minipage}{0.33\textwidth}
+    \end{minipage}\begin{minipage}{0.3\textwidth}
 
     \phantom{m}Einige Felder: \autocite{bibtex}
 
@@ -927,34 +896,71 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
     \vfill
 
     \end{minipage}
+
+    Je nach Eintragstyp werden verschiedene Felder unterstützt
+    \autocite{bibtex}
     \end{frame}
 
     \begin{frame}{Quellen für \textsc{Bib}\TeX~Einträge}
     \protect\hypertarget{quellen-fuxfcr-eintruxe4ge}{}
-    Viele wissenschaftlich ausgerichtete Suchmaschinen bieten die
-    Möglichkeit \textsc{Bib}\TeX~Einträge zu kopieren
-    \cite{google-scholar}\cite{dblp}\\
+    \begin{minipage}{0.7\textwidth}
 
-    \begin{block}{DBLP \autocite{dblp}}
-    \protect\hypertarget{dblp-dblp}{}
+    Einträge können aus Suchmaschinen kopiert werden:\\
+
     \begin{itemize}
     \tightlist
     \item
-      \href{https://dblp.org/}{\alert{\underline{dblp.org}}}
+      Google Scholar \autocite{google-scholar}
     \item
-      Auf Informatik spezialisierte Literaturdatenbank
+      IEEE Xplore \autocite{ieee-xplore}
     \item
-      Über 6.000.000 Einträge
+      DBLP\normalsize~\autocite{dblp}
+
+      \begin{itemize}
+      \tightlist
+      \item
+        Auf Informatik spezialisierte Literaturdatenbank
+      \item
+        Über 6.000.000 Einträge
+      \item
+        Alle Einträge werden manuell geprüft
+
+        \begin{itemize}
+        \tightlist
+        \item
+          Hohe Qualität gegenüber anderen Angeboten
+        \end{itemize}
+      \end{itemize}
     \end{itemize}
-    \end{block}
+
+    \end{minipage}\begin{minipage}{0.3\textwidth}
+
+    \vfill
+
+    \centering{\scriptsize Google Scholar}
+    \hfill \includegraphics[width=.8\textwidth]{google-scholar.png}
+
+    \vspace{.5\baselineskip}
+
+    \centering{\scriptsize IEEE Xplore}
+    \hfill \includegraphics[width=.8\textwidth]{ieee.png}
+
+    \vspace{.5\baselineskip}
+
+    \centering{\scriptsize DBLP}
+    \includegraphics[width=\textwidth]{dblp.png}
+
+    \end{minipage}
     \end{frame}
 
-    \begin{frame}[fragile]{JabRef \autocite{jabref}}
-    \protect\hypertarget{jabref-jabref}{}
+    \begin{frame}[fragile]{JabRef}
+    \protect\hypertarget{jabref}{}
+    \begin{minipage}{0.4\textwidth}
+
     \begin{itemize}
     \tightlist
     \item
-      GUI Editor für \texttt{.bib}-Dateien
+      GUI Editor für \texttt{.bib}-Dateien \autocite{jabref}
     \item
       Bietet eine Suchfunktion für einige wissenschaftliche Datenbanken
 
@@ -966,6 +972,12 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
         Gefundene Einträge können direkt importiert werden
       \end{itemize}
     \end{itemize}
+
+    \end{minipage}\begin{minipage}{0.6\textwidth}
+
+    \includegraphics[width=\textwidth]{jabref.png}
+
+    \end{minipage}
     \end{frame}
 
     \begin{frame}[fragile]{\textsc{Bib}\LaTeX}
@@ -976,7 +988,7 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
       Neuentwicklung des Zitiersystems von
       \LaTeX \autocite{ctan-biblatex}
     \item
-      Bessere Unterstützung für Sprachen außer Englisch
+      Bessere Unterstützung für Sprachen neben Englisch
       \autocite{ctan-biblatex}
     \item
       Zusätzliche Eintragstypen wie \texttt{@online}, \texttt{@software}
@@ -1006,15 +1018,15 @@ interior style={fill tile image*={height=64pt}{/nix/store/vsnnbvqrzfpn8acmwxp9y1
     \begin{itemize}
     \tightlist
     \item
-      Biblatex muss als Paket geladen werden \autocite{biblatex}
+      Muss als Paket geladen werden \autocite{biblatex}
 
       \begin{itemize}
       \tightlist
       \item
-        Der Stil wird als optionales Argument an usepackage übergeben
+        Stil wird als Argument übergeben
       \end{itemize}
     \item
-      Beim Kompilieren wird \texttt{bibtex} durch \texttt{biber} ersetzt
+      \texttt{bibtex} wird durch \texttt{biber} ersetzt
       \autocite{biblatex}
     \end{itemize}
 

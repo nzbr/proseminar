@@ -7,11 +7,11 @@
         "pnpm2nix": "pnpm2nix"
       },
       "locked": {
-        "lastModified": 1680192896,
-        "narHash": "sha256-4OyZ8X6u9hWEdcJqpGv/oJQtRUgfLkx58SKiibZzTPg=",
+        "lastModified": 1681235068,
+        "narHash": "sha256-O6ux/IG/MoKEy2g/tZAavFPUfIcnosStq2gCsMtFQUg=",
         "owner": "nzbr",
         "repo": "copperflame",
-        "rev": "b11b4d5fd5fd0ef77e1aa219282c68bc1ffe8a9b",
+        "rev": "1b05683289913f56570279d1493fb737075caeb3",
         "type": "github"
       },
       "original": {
@@ -51,12 +51,15 @@
       }
     },
     "flake-utils_3": {
+      "inputs": {
+        "systems": "systems"
+      },
       "locked": {
-        "lastModified": 1678901627,
-        "narHash": "sha256-U02riOqrKKzwjsxc/400XnElV+UtPUQWpANPlyazjH0=",
+        "lastModified": 1681202837,
+        "narHash": "sha256-H+Rh19JDwRtpVPAWp64F+rlEtxUWBAQW28eAi3SRSzg=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "93a2b84fc4b70d9e089d029deacc3583435c2ed6",
+        "rev": "cfacdce06f30d2b68473a46042957675eebb3401",
         "type": "github"
       },
       "original": {
@@ -120,6 +123,21 @@
       "inputs": {
         "copperflame": "copperflame",
         "flake-utils": "flake-utils_3"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
       }
     }
   },
