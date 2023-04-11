@@ -372,17 +372,17 @@ In einem Schritt mit Build-Tools wie \mbox{\emph{latexmk}}\cite{ctan-latexmk} od
 :::{.minipage width=0.7}
 | Eintragstyp | Beschreibung |
 | ---- | ---- |
-| \@Article | Artikel (in einer Zeitschrift) \cite{bibtex} |
-| \@Book | Ein Buch mit Verlag \cite{bibtex} |
-| \@Booklet | Ein Buch ohne Verlag \cite{bibtex} |
-| \@InBook | Teil eines Buches \cite{bibtex} |
-| \@InCollection | Teil eines Sammelbandes \cite{bibtex} |
-| \@Manual | Dokumentationen, Anleitungen \cite{bibtex} |
-| \@MastersThesis | Masterarbeit \cite{bibtex} |
-| \@PhdThesis | Doktorarbeit \cite{bibtex} |
-| \@Techreport | Technischer Bericht \cite{bibtex} |
-| \@Unpublished | Unveröffentlichte Arbeit \cite{bibtex} |
-| \@Misc | Alles andere \cite{bibtex} |
+| `@Article` | Artikel (in einer Zeitschrift) \cite{bibtex} |
+| `@Book` | Ein Buch mit Verlag \cite{bibtex} |
+| `@Booklet` | Ein Buch ohne Verlag \cite{bibtex} |
+| `@InBook` | Teil eines Buches \cite{bibtex} |
+| `@InCollection` | Teil eines Sammelbandes \cite{bibtex} |
+| `@Manual` | Dokumentationen, Anleitungen \cite{bibtex} |
+| `@MastersThesis` | Masterarbeit \cite{bibtex} |
+| `@PhdThesis` | Doktorarbeit \cite{bibtex} |
+| `@Techreport` | Technischer Bericht \cite{bibtex} |
+| `@Unpublished` | Unveröffentlichte Arbeit \cite{bibtex} |
+| `@Misc` | Alles andere \cite{bibtex} |
 :::
 :::{.minipage width=0.3}
 \phantom{m}Einige Felder: [@bibtex]

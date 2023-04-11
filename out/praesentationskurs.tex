@@ -145,7 +145,7 @@
     left=0.5em, right=0.5em, top=0.5em, bottom=0.5em,
     arc=0.5em,
     auto outer arc,
-interior style={fill tile image*={height=64pt}{/nix/store/0japjbcx259wld5919pwfavxisbfsavr-copperflame/assets/acrylic-texture.png}},
+interior style={fill tile image*={height=64pt}{/nix/store/67ygglrdqjjn933559bvp52w0dgr1kyv-copperflame/assets/acrylic-texture.png}},
     drop fuzzy shadow=shadow
 }
 % ===== END PANDOC =====
@@ -171,7 +171,7 @@ interior style={fill tile image*={height=64pt}{/nix/store/0japjbcx259wld5919pwfa
     Scale=1
 ]
 \newfontfamily{\dosfont}{less-perfect-dos-vga}[
-    Path = /nix/store/kk8agc06yclp5aw3g8b2a235p0f4r9js-perfect-dos-vga/share/fonts/truetype/,
+    Path = /nix/store/2q3f42n9lbfaqass2qdsxymph7bsral6-perfect-dos-vga/share/fonts/truetype/,
     Extension = .ttf,
     NFSSFamily=dosfont,
     Scale=1.2
@@ -284,7 +284,7 @@ interior style={fill tile image*={height=64pt}{/nix/store/0japjbcx259wld5919pwfa
     sharp corners,
     nobeforeafter,
     top = 4pt, bottom = 4pt,
-    interior style={fill tile image*={height=64pt}{/nix/store/0japjbcx259wld5919pwfavxisbfsavr-copperflame/assets/acrylic-texture.png}},
+    interior style={fill tile image*={height=64pt}{/nix/store/67ygglrdqjjn933559bvp52w0dgr1kyv-copperflame/assets/acrylic-texture.png}},
     fuzzy shadow={0mm}{-2pt}{0mm}{0.5pt}{shadow}
 }
 \setbeamertemplate{frametitle}{%
@@ -838,7 +838,7 @@ interior style={fill tile image*={height=64pt}{/nix/store/0japjbcx259wld5919pwfa
     \end{minipage}
     \end{frame}
 
-    \begin{frame}{\textsc{Bib}\TeX~- Einträge und Felder}
+    \begin{frame}[fragile]{\textsc{Bib}\TeX~- Einträge und Felder}
     \protect\hypertarget{eintruxe4ge-und-felder}{}
     \begin{minipage}{0.7\textwidth}
 
@@ -847,17 +847,17 @@ interior style={fill tile image*={height=64pt}{/nix/store/0japjbcx259wld5919pwfa
     Eintragstyp & Beschreibung \\
     \midrule()
     \endhead
-    @Article & Artikel (in einer Zeitschrift) \cite{bibtex} \\
-    @Book & Ein Buch mit Verlag \cite{bibtex} \\
-    @Booklet & Ein Buch ohne Verlag \cite{bibtex} \\
-    @InBook & Teil eines Buches \cite{bibtex} \\
-    @InCollection & Teil eines Sammelbandes \cite{bibtex} \\
-    @Manual & Dokumentationen, Anleitungen \cite{bibtex} \\
-    @MastersThesis & Masterarbeit \cite{bibtex} \\
-    @PhdThesis & Doktorarbeit \cite{bibtex} \\
-    @Techreport & Technischer Bericht \cite{bibtex} \\
-    @Unpublished & Unveröffentlichte Arbeit \cite{bibtex} \\
-    @Misc & Alles andere \cite{bibtex} \\
+    \texttt{@Article} & Artikel (in einer Zeitschrift) \cite{bibtex} \\
+    \texttt{@Book} & Ein Buch mit Verlag \cite{bibtex} \\
+    \texttt{@Booklet} & Ein Buch ohne Verlag \cite{bibtex} \\
+    \texttt{@InBook} & Teil eines Buches \cite{bibtex} \\
+    \texttt{@InCollection} & Teil eines Sammelbandes \cite{bibtex} \\
+    \texttt{@Manual} & Dokumentationen, Anleitungen \cite{bibtex} \\
+    \texttt{@MastersThesis} & Masterarbeit \cite{bibtex} \\
+    \texttt{@PhdThesis} & Doktorarbeit \cite{bibtex} \\
+    \texttt{@Techreport} & Technischer Bericht \cite{bibtex} \\
+    \texttt{@Unpublished} & Unveröffentlichte Arbeit \cite{bibtex} \\
+    \texttt{@Misc} & Alles andere \cite{bibtex} \\
     \bottomrule()
     \end{longtable}
 
