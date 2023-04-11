@@ -1,5 +1,5 @@
 ---
-title: "Wissenschaftliches Schreiben mit \\LaTeX und \\BibTeX"
+title: "Wissenschaftliches Schreiben mit \\LaTeX\\ und \\BibTeX"
 author: "Nico Jansen"
 date: \today
 lang: "de-DE"
