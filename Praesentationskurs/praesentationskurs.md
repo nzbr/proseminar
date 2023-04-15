@@ -72,7 +72,7 @@ include-before:
 
 - \enquote{[\ldots] a system for typesetting documents}[@latex]
 - Erweiterung von \TeX[@latex]
-- Erschienen 1985 in Version 2.09. Die heute gebräuchliche Version ist \hologo{LaTeX2e}[@latex]
+- Erschienen 1985 in Version 2.09. Aktuell ist \hologo{LaTeX2e}[@latex]
 - Erlaubt es Dokumente aus Code zu erzeugen[@latex]
     - Inhalt ist größtenteils unabhängig vom Design (im Gegensatz zu einem _WYSIWYG_-Editor)[@latex]
     - Umfassende Syntax für mathematische Ausdrücke[@latex]
@@ -381,7 +381,7 @@ In einem Schritt mit Build-Tools wie \mbox{\emph{latexmk}}\cite{ctan-latexmk} od
 | `@MastersThesis` | Masterarbeit \cite{bibtex} |
 | `@PhdThesis` | Doktorarbeit \cite{bibtex} |
 | `@Techreport` | Technischer Bericht \cite{bibtex} |
-| `@Unpublished` | Unveröffentlichte Arbeit \cite{bibtex} |
+| `@Unpublished` | Unveröffentlichtes Werk \cite{bibtex} |
 | `@Misc` | Alles andere \cite{bibtex} |
 :::
 :::{.minipage width=0.3}
