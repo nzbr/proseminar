@@ -371,6 +371,8 @@ interior style={fill tile image*={height=64pt}{/nix/store/67ygglrdqjjn933559bvp5
     \end{quote}
 }
 
+\usetikzlibrary{shapes,arrows}
+
 % ===== END HEADER INCLUDES =====
 
 \begin{document}
@@ -390,40 +392,8 @@ interior style={fill tile image*={height=64pt}{/nix/store/67ygglrdqjjn933559bvp5
 
     
         
-    \begin{frame}{\LaTeX}
-    \protect\hypertarget{section}{}
-    \begin{itemize}
-    \tightlist
-    \item
-      \enquote{[\ldots] a system for typesetting documents}\autocite{latex}
-    \item
-      Erweiterung von \TeX\autocite{latex}
-    \item
-      Erschienen 1985 in Version 2.09. Aktuell ist
-      \hologo{LaTeX2e}\autocite{latex}
-    \item
-      Erlaubt es Dokumente aus Code zu erzeugen\autocite{latex}
-
-      \begin{itemize}
-      \tightlist
-      \item
-        Inhalt ist größtenteils unabhängig vom Design (im Gegensatz zu
-        einem \emph{WYSIWYG}-Editor)\autocite{latex}
-      \item
-        Umfassende Syntax für mathematische Ausdrücke\autocite{latex}
-      \item
-        Verschiedene Ausgabeformate (DVI\autocite{latex},
-        PostScript\autocite{ctan-dvips}, PDF\autocite{ctan-dvipdfmx},
-        \ldots)
-      \end{itemize}
-    \item
-      Erweiterbar mit über 6000 Paketen von
-      \href{https://ctan.org}{\alert{\underline{CTAN}}}\autocite{ctan}
-    \end{itemize}
-    \end{frame}
-
-    \begin{frame}[fragile]{Ein erstes Beispiel}
-    \protect\hypertarget{ein-erstes-beispiel}{}
+    \begin{frame}[fragile]{Ein \LaTeX-Dokument}
+    \protect\hypertarget{ein--dokument}{}
     \begin{minipage}{0.66\textwidth}
 
 \begin{Shaded}
@@ -467,6 +437,38 @@ interior style={fill tile image*={height=64pt}{/nix/store/67ygglrdqjjn933559bvp5
     \emph{lualatex}\autocite{ctan-luatex} geben PDF aus.\\
     (\hologo{XeTeX} und \hologo{LuaTeX} unterstützen auch Unicode und
     TrueType Schriftarten).
+    \end{frame}
+
+    \begin{frame}{Fakten über \LaTeX}
+    \protect\hypertarget{fakten-uxfcber}{}
+    \begin{itemize}
+    \tightlist
+    \item
+      \enquote{[\ldots] a system for typesetting documents}\autocite{latex}
+    \item
+      Erlaubt es Dokumente aus Code zu erzeugen\autocite{latex}
+
+      \begin{itemize}
+      \tightlist
+      \item
+        Inhalt größtenteils unabhängig vom Design (im Gegensatz zu einem
+        \emph{WYSIWYG}-Editor)\autocite{latex}
+      \item
+        Umfassende Syntax für mathematische Ausdrücke\autocite{latex}
+      \item
+        Verschiedene Ausgabeformate (DVI\autocite{latex},
+        PostScript\autocite{ctan-dvips}, PDF\autocite{ctan-dvipdfmx},
+        \ldots)
+      \end{itemize}
+    \item
+      Erschienen 1985 in Version 2.09. Aktuell ist
+      \hologo{LaTeX2e}\autocite{latex}
+    \item
+      Standard in der Wissenschaft \autocite{latex}
+    \item
+      Erweiterbar mit über 6000 Paketen von
+      \href{https://ctan.org}{\alert{\underline{CTAN}}}\autocite{ctan}
+    \end{itemize}
     \end{frame}
 
     \begin{frame}[fragile]{\LaTeX-Befehle}
@@ -771,7 +773,7 @@ interior style={fill tile image*={height=64pt}{/nix/store/67ygglrdqjjn933559bvp5
     \end{frame}
 
     \begin{frame}[fragile]{\textsc{Bib}\TeX}
-    \protect\hypertarget{section-1}{}
+    \protect\hypertarget{section}{}
     Ersetzt \texttt{thebibliography} mit einer \texttt{.bib} Datei
     \autocite{overleaf-bibtex}\\
 
@@ -981,7 +983,7 @@ interior style={fill tile image*={height=64pt}{/nix/store/67ygglrdqjjn933559bvp5
     \end{frame}
 
     \begin{frame}[fragile]{\textsc{Bib}\LaTeX}
-    \protect\hypertarget{section-2}{}
+    \protect\hypertarget{section-1}{}
     \begin{itemize}
     \tightlist
     \item

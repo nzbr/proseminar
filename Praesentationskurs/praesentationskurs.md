@@ -68,20 +68,7 @@ include-before:
         \end{frame}
 ---
 
-# \LaTeX
-
-- \enquote{[\ldots] a system for typesetting documents}[@latex]
-- Erweiterung von \TeX[@latex]
-- Erschienen 1985 in Version 2.09. Aktuell ist \hologo{LaTeX2e}[@latex]
-- Erlaubt es Dokumente aus Code zu erzeugen[@latex]
-    - Inhalt ist größtenteils unabhängig vom Design (im Gegensatz zu einem _WYSIWYG_-Editor)[@latex]
-    - Umfassende Syntax für mathematische Ausdrücke[@latex]
-    - Verschiedene Ausgabeformate (DVI[@latex], PostScript[@ctan-dvips], PDF[@ctan-dvipdfmx], \ldots)
-- Erweiterbar mit über 6000 Paketen von [\link{CTAN}](https://ctan.org)[@ctan]
-
----
-
-# Ein erstes Beispiel
+# Ein \LaTeX-Dokument
 
 :::{.minipage width=0.66}
 ```latex
@@ -106,6 +93,19 @@ Erzeugt `beispiel.dvi`.\
 \
 _pdflatex_[@ctan-pdftex], _xelatex_[@ctan-xetex] und _lualatex_[@ctan-luatex] geben PDF aus.\
 (\hologo{XeTeX} und \hologo{LuaTeX} unterstützen auch Unicode und TrueType Schriftarten).
+
+---
+
+# Fakten über \LaTeX
+
+- \enquote{[\ldots] a system for typesetting documents}[@latex]
+- Erlaubt es Dokumente aus Code zu erzeugen[@latex]
+    - Inhalt größtenteils unabhängig vom Design (im Gegensatz zu einem _WYSIWYG_-Editor)[@latex]
+    - Umfassende Syntax für mathematische Ausdrücke[@latex]
+    - Verschiedene Ausgabeformate (DVI[@latex], PostScript[@ctan-dvips], PDF[@ctan-dvipdfmx], \ldots)
+- Erschienen 1985 in Version 2.09. Aktuell ist \hologo{LaTeX2e}[@latex]
+- Standard in der Wissenschaft [@latex]
+- Erweiterbar mit über 6000 Paketen von [\link{CTAN}](https://ctan.org)[@ctan]
 
 ---
 
