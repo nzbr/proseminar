@@ -12,7 +12,7 @@
       in
       {
         packages = {
-          praesentationskurs = pkgs.callPackage (./. + "/Praesentationskurs") copperflame.packages.${system};
+          praesentationskurs = pkgs.callPackage ./. copperflame.packages.${system};
         };
       }
     )) // {
