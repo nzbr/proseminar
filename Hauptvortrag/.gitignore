@@ -1,0 +1,4 @@
+.parcel-cache/
+*.bib.sav
+node_modules/
+dist/

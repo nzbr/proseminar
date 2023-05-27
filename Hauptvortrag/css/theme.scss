@@ -1,0 +1,101 @@
+/**
+ * Forked from the white theme for reveal.js by Hakim El Hattab
+ */
+
+// Default mixins and settings -----------------
+@import "/node_modules/reveal.js/css/theme/template/mixins";
+@import "/node_modules/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(./roboto-slab.scss);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #222;
+$headingColor: #222;
+
+$mainFontSize: 42px;
+$mainFont: 'Roboto Slab', Helvetica, sans-serif;
+$headingFont: 'Roboto Slab', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+//$linkColor: #2a76dd;
+$linkColor: #00C600;
+$linkColorHover: lighten($linkColor, 15%);
+$selectionBackgroundColor: lighten($linkColor, 25%);
+
+$heading1Size: 1.5em;
+$heading2Size: 1.25em;
+$heading3Size: 1.1em;
+$heading4Size: 1.0em;
+
+// Change text colors against dark slide backgrounds
+@include dark-bg-text-color(#fff);
+
+
+// Theme template ------------------------------
+@import "/node_modules/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+
+.citation {
+    color: lighten($mainColor, 20%);
+    // superset
+    position: relative;
+    top: -1ex;
+    font-size: 0.6em;
+    height: 100%;
+}
+
+.sidebar-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.content {
+    //border: 1px solid fuchsia;
+    flex: 1;
+    align-self: center;
+}
+
+.sidebar {
+    //border: 1px solid cyan;
+    width: 30%;
+    margin: 0;
+    height: 100%;
+
+    font-size: .5em;
+    .citation {
+        font-size: inherit;
+        top: 0
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    img {
+        margin: 0;
+    }
+}
+
+video {
+    border-radius: 1em;
+}
+
+#refs {
+    font-size: 0.75em;
+    overflow: auto;
+
+    text-align: left;
+
+    .csl-entry {
+    }
+}

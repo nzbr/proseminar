@@ -1,0 +1,28 @@
+{
+    "name": "hauptvortrag",
+    "author": "nzbr",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "prebuild": "rimraf dist .parcel-cache",
+        "build": "parcel build --no-source-maps --public-url ./",
+        "start": "parcel"
+    },
+    "source": [
+        "hauptvortrag.md"
+    ],
+    "keywords": [],
+    "dependencies": {
+        "@fontsource/roboto-slab": "^5.0.1",
+        "reveal.js": "^4.5.0"
+    },
+    "devDependencies": {
+        "@local/parcel-transformer-pandoc": "link:./parcel-transformer-pandoc",
+        "@parcel/config-default": "^2.8.3",
+        "@parcel/transformer-sass": "^2.8.3",
+        "parcel": "^2.8.3",
+        "parcel-transformer-fonts": "^1.1.3",
+        "rimraf": "^5.0.1",
+        "sharp": "^0.31.1"
+    }
+}

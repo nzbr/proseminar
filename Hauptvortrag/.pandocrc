@@ -1,0 +1,8 @@
+{
+  "template": "template.html",
+  "assetType": "html",
+  "format": "revealjs",
+  "options": [
+    "--citeproc"
+  ]
+}
