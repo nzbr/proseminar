@@ -1,17 +1,30 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@fontsource/roboto-slab':
     specifier: ^5.0.1
     version: 5.0.1
+  copperflame:
+    specifier: link:~/Projekte/copperflame
+    version: link:../../../../Projekte/copperflame
   reveal.js:
     specifier: ^4.5.0
     version: 4.5.0
 
 devDependencies:
+  '@local/parcel-transformer-include':
+    specifier: link:~/Projekte/copperflame/parcel/transformer-include
+    version: link:../../../../Projekte/copperflame/parcel/transformer-include
   '@local/parcel-transformer-pandoc':
-    specifier: link:./parcel-transformer-pandoc
-    version: link:parcel-transformer-pandoc
+    specifier: link:~/Projekte/copperflame/parcel/transformer-pandoc
+    version: link:../../../../Projekte/copperflame/parcel/transformer-pandoc
+  '@local/parcel-transformer-revealjs':
+    specifier: link:~/Projekte/copperflame/parcel/transformer-revealjs
+    version: link:../../../../Projekte/copperflame/parcel/transformer-revealjs
   '@parcel/config-default':
     specifier: ^2.8.3
     version: 2.8.3(@parcel/core@2.8.3)

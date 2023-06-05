@@ -4,19 +4,24 @@
 ╟───────────────────────────────────────╢
 ║              Nico Jansen              ║
 ╟───────┬───────────────────────────────╢
-║ Datum │  26.05.2023                   ║
+║ Datum │  2023-06-04                   ║
 ║ Typ   │  HTML5/JS (reveal.js)         ║
-║ Größe │  550KB                        ║
+║ Größe │  513KB                        ║
 ╟───────┴───────────────────────────────╢
 ║ HINWEISE                              ║
 ║ Zum Öffnen der Präsentation einfach   ║
 ║ die hauptvortrag.html öffnen.         ║
-║ Benötigt einen Browser mit AVIF       ║
-║ Unterstützung                         ║
+║ Benötigt einen Browser mit            ║
+║ AVIF, VP9 und WebGL Unterstützung!    ║
 ╟───────────────────────────────────────╢
 ║ GETESTET IN                           ║
-║ Chromium 113                          ║
+║ Chromium 113, Firefox 114.0b9         ║
 ║ Windows NT 10.0.22624 (22H2)          ║
+╟───────────────────────────────────────╢
+║ FUNKTIONIERT NICHT IN                 ║
+║ Safari (Videos laden nicht,           ║
+║         Teile des Layouts falsch)     ║
+║ MS Edge (Kein AVIF Support)           ║
 ╟───────────────────────────────────────╢
 ║ ABSTRACT                              ║
 ║ Die Demoszene ist eine Gruppierung    ║

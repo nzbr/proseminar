@@ -7,6 +7,11 @@
         "*.md": [
             "@local/parcel-transformer-pandoc"
         ],
+        "*.html": [
+            "@local/parcel-transformer-revealjs",
+            "@local/parcel-transformer-include",
+            "..."
+        ],
         "*.{ttf,woff,woff2}": [
             "parcel-transformer-fonts"
         ]

@@ -5,8 +5,9 @@
     "private": true,
     "scripts": {
         "prebuild": "rimraf dist .parcel-cache",
-        "build": "parcel build --no-source-maps --public-url ./",
-        "start": "parcel"
+        "build": "parcel build --no-autoinstall --no-source-maps --public-url ./",
+        "prestart": "rimraf .parcel-cache",
+        "start": "parcel --no-autoinstall"
     },
     "source": [
         "hauptvortrag.md"
@@ -14,10 +15,13 @@
     "keywords": [],
     "dependencies": {
         "@fontsource/roboto-slab": "^5.0.1",
+        "copperflame": "link:~/Projekte/copperflame",
         "reveal.js": "^4.5.0"
     },
     "devDependencies": {
-        "@local/parcel-transformer-pandoc": "link:./parcel-transformer-pandoc",
+        "@local/parcel-transformer-include": "link:~/Projekte/copperflame/parcel/transformer-include",
+        "@local/parcel-transformer-pandoc": "link:~/Projekte/copperflame/parcel/transformer-pandoc",
+        "@local/parcel-transformer-revealjs": "link:~/Projekte/copperflame/parcel/transformer-revealjs",
         "@parcel/config-default": "^2.8.3",
         "@parcel/transformer-sass": "^2.8.3",
         "parcel": "^2.8.3",
