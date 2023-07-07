@@ -1,0 +1,14 @@
+@use "./node_modules/copperflame/css/config" with (
+  $professional: true,
+  $darkmode: false,
+  //$debug: true,
+
+  $image-format: "avif",
+
+  //$font-ranges: (latin),
+  //$font-weights: (400, 600, 700),
+  $font-ttf-fallback: false,
+);
+@use "./node_modules/copperflame/css/revealjs" as *;
+
+@use "./node_modules/copperflame/css/elements";

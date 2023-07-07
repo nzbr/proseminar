@@ -1,0 +1,32 @@
+{
+    "name": "hack",
+    "author": "nzbr",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "prebuild": "rimraf dist .parcel-cache",
+        "build": "parcel build --no-autoinstall --no-source-maps --public-url ./",
+        "prestart": "rimraf .parcel-cache",
+        "start": "parcel --no-autoinstall"
+    },
+    "source": [
+        "index.md"
+    ],
+    "keywords": [],
+    "dependencies": {
+        "@fontsource/roboto-slab": "^5.0.1",
+        "copperflame": "link:~/Projekte/copperflame",
+        "reveal.js": "^4.5.0"
+    },
+    "devDependencies": {
+        "@local/parcel-transformer-include": "link:~/Projekte/copperflame/parcel/transformer-include",
+        "@local/parcel-transformer-pandoc": "link:~/Projekte/copperflame/parcel/transformer-pandoc",
+        "@local/parcel-transformer-revealjs": "link:~/Projekte/copperflame/parcel/transformer-revealjs",
+        "@parcel/config-default": "^2.8.3",
+        "@parcel/transformer-sass": "^2.8.3",
+        "parcel": "^2.8.3",
+        "parcel-transformer-fonts": "^1.1.3",
+        "rimraf": "^5.0.1",
+        "sharp": "^0.31.1"
+    }
+}

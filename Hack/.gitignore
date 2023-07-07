@@ -2,4 +2,3 @@
 *.bib.sav
 node_modules/
 dist/
-exe/
