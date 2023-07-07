@@ -1,5 +1,5 @@
 {
-  "template": "template.html",
+  "template": "node_modules/copperflame/pandoc/revealjs.html",
   "assetType": "html",
   "format": "revealjs",
   "options": [

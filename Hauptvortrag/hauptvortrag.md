@@ -5,7 +5,8 @@ author: "Nico Jansen"
 date: 26.05.2023
 lang: "de-DE"
 controlsTutorial: false
-csl: "thirdparty/csl-styles/ieee.csl"
+css: /theme.scss
+csl: "../thirdparty/csl-styles/ieee.csl"
 bibliography:
     - "hauptvortrag.bib"
 no-title-slide: true
