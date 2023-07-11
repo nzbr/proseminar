@@ -91,7 +91,7 @@ export default r(() => {
                         newContent = [
                             <button class="mode-toggle" onclick={($event: MouseEvent) => {
                                 ($event.target as HTMLButtonElement).hidden = true;
-                                el.setAttribute('type', 'latex');
+                                el.setAttribute('type', 'code');
                                 updateSelf();
                             }}>Code</button>,
                             <img src={url}/>
