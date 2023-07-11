@@ -14,6 +14,7 @@
     ],
     "keywords": [],
     "dependencies": {
+        "@fontsource/jetbrains-mono": "^5.0.5",
         "@fontsource/roboto-slab": "^5.0.1",
         "copperflame": "link:~/Projekte/copperflame",
         "reveal.js": "^4.5.0"
