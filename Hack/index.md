@@ -198,9 +198,9 @@ $ pandoc dokument.md \
 <div class="text">
 <strong>Alle Vorträge</strong>
 
-<a href="https://nzbr.pages.nzbr.de/proseminar">https://nzbr.pages.nzbr.de/proseminar</a>
+<a href="https://github.com/nzbr/proseminar">https://github.com/nzbr/proseminar</a>
 und
-<a href="https://git.nzbr.de/nzbr/proseminar">https://git.nzbr.de/nzbr/proseminar</a>
+<a href="https://nzbr.pages.nzbr.de/proseminar">https://nzbr.pages.nzbr.de/proseminar</a>
 </div>
 :::
 
