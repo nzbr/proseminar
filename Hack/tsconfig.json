@@ -1,0 +1,26 @@
+{
+    "include": [
+        "js/**/*.ts",
+        "js/**/*.tsx"
+    ],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "jsx": "react-jsx",
+        "jsxImportSource": "@xeserv/xeact",
+        "experimentalDecorators": true,
+        "isolatedModules": true,
+        "module": "ES2022",
+        "moduleResolution": "node",
+        "paths": {
+            "~*": [
+                "./*"
+            ]
+        },
+        "target": "ES2022",
+        "lib": [
+            "ES2021",
+            "dom"
+        ],
+        "strict": false
+    }
+}
