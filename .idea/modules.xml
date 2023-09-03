@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Proseminar.iml" filepath="$PROJECT_DIR$/Proseminar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ausarbeitung/Ausarbeitung.iml" filepath="$PROJECT_DIR$/Ausarbeitung/Ausarbeitung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hack/Hack.iml" filepath="$PROJECT_DIR$/Hack/Hack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hauptvortrag/Hauptvortrag.iml" filepath="$PROJECT_DIR$/Hauptvortrag/Hauptvortrag.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Praesentationskurs/Praesentationskurs.iml" filepath="$PROJECT_DIR$/Praesentationskurs/Praesentationskurs.iml" />
     </modules>
   </component>
 </project>
