@@ -6,6 +6,7 @@ pages:
     - cp -vr Praesentationskurs/out/praesentationskurs.pdf public/praesentationskurs.pdf
     - cp -vr Hauptvortrag/dist/. public/hauptvortrag
     - cp -vr Hack/dist/. public/hack
+    - cp -vr Ausarbeitung/Ausarbeitung.pdf public/Ausarbeitung.pdf
   artifacts:
     paths:
       - public

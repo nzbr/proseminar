@@ -1,0 +1,44 @@
+\documentclass[a4paper]{IEEEtran}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[babelshorthands=true,localmarks=true]{polyglossia}
+\setdefaultlanguage{$lang$}
+\usepackage[$lang$]{datetime2}
+\DTMsetdatestyle{iso}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\usepackage{calc}
+\usepackage[backend=biber,style=ieee,urldate=iso]{biblatex}
+\addbibresource{$bibliography$}
+
+% Metadata
+\title{$title$}
+\author{$author$,~\IEEEmembership{TU Dortmund}}
+%\author{\cAuthor}
+\date{\today}
+
+\hypersetup{
+    hidelinks,
+    pdftitle={$title$},
+    pdfauthor={$author$},
+    pdflang={$lang$},
+}
+
+% pandoc
+\newcommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% custom commands
+\newcommand*{\g}[2][innen]{\mbox{#2$$^\ast$$#1}}
+%\newcommand*{\g}[2][innen]{\mbox{#2}}
+
+\newcommand*{\cn}[1][]{[\textbf{citation needed}#1]}
+
+
+% Content
+\begin{document}
+    \maketitle
+
+    $body$
+\end{document}
