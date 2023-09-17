@@ -88,7 +88,7 @@ an FPGA [@lft-parallelogram],
 the PC inside an ATM [@haujobb-payback]
 an oscilloscope [@tvt-youscope],
 the disk drive of a Commodore 64 (without the C64 attached) [@reflex-freespin],
-and even a raytracer running inside a MySQL database [@holtsetio-mysql-raytracer].
+and even a raytracer running inside a MySQL database management system [@holtsetio-mysql-raytracer].
 
 # History
 
@@ -277,7 +277,7 @@ _Tracked Music_ competitions are still held at demo parties today. [@revision-mu
 The early models of the IBM PC, first released in 1981, 
 and compatible computers, were not particularly suited for video games or demos. 
 They featured CGA graphics with a mere four colors, and all they had to offer in terms of audio was a buzzer^[
-An internal speaker, capable of producing a single signal tone. Some modern PCs still include it.
+An internal speaker, capable of producing signal tones. Some modern PCs still include it.
 ]. [@kunst-code-maschine, pp. 219-220]
 Later models were more capable with the introduction of sound cards and EGA graphics, 
 allowing for 16 out of 64 colors to be displayed at once. [@kunst-code-maschine, p. 220]
@@ -286,7 +286,7 @@ This was still not competitive to what Commodore had to offer,
 but it was sufficient for video games to start appearing on the platform.
 With the availability of video games, a PC cracker scene formed. [@kunst-code-maschine, p. 220]
 
-The first PC competition happened at the Assembly demoparty in 1992. [@kunst-code-maschine, p. 226]
+The first PC competition happened at the Assembly demo party in 1992. [@kunst-code-maschine, p. 226]
 Its breakthrough had the PC scene, in 1993, 
 when Future Crew released their demo "Second Reality" at that year's Assembly. [@kunst-code-maschine, pp. 229-232]
 
