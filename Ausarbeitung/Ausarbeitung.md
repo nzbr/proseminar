@@ -121,7 +121,7 @@ These were called _crack screens_. [@illegal-guys, p. 262]
 
 ## Cracktros
 
-Up until this point, the cracker scene was primarily an american phenomenon,
+Up until this point, the cracker scene was primarily an American phenomenon,
 centered around cracking games released for the Apple II. [@kunst-code-maschine, pp. 45-46]
 This changed after the _Commodore 64_ was released in 1982. [@infoworld-c64]
 With 22 Million units sold, it long held the place of the most successful home computer.
@@ -194,7 +194,7 @@ There were multiple factors that contributed to this development.
 [@crackers-demosceners] 
 
 Firstly, there was the issue of legality.
-Beginning in the late 1980s, west german law enforcement started to take action against the cracker scene.
+Beginning in the late 1980s, West German law enforcement started to take action against the cracker scene.
 Copy parties and the homes of crackers were raided and cracked software and equipment seized.
 At the same time, media began condemning software piracy, worsening the perception of playing cracked games.
 Due to the threat of police raids, copy parties no longer provided a viable method for exchanging warez.
@@ -302,8 +302,8 @@ it was made for. [@kunst-code-maschine, pp. 227]
 
 # The Demoscene Today
 
-Even today, the demoscene is largely an european phenomenon.
-Most demo parties are held in northern europe. [@crackers-demosceners] [@demoparty-net]
+Even today, the demoscene is largely a European phenomenon.
+Most demo parties are held in northern Europe. [@crackers-demosceners] [@demoparty-net]
 
 While many sceners moved from the C64 to the Amiga and then to the PC, both platforms, 
 as well as some retro systems not mentioned here, are still used to create demos today 
@@ -325,7 +325,7 @@ and _Demozoo_, a website that is similar to Pouët, but with a more modern desig
 
 Some groups that are active in the demoscene today have not stopped being active in the cracker scene as well.
 For example, the group "Razor 1911", [@razor1911-demozoo]
-is still releasing warez as of january 2023. [@rzr-nfo]
+is still releasing warez as of January 2023. [@rzr-nfo]
 How closely their activities in the two scenes are related, if at all, is unclear, 
 due to the fact that the identity of the people active in their cracker branch is not public, to avoid prosecution.
 However, Dubmood, a musician for Razor 1911, 
@@ -376,6 +376,6 @@ The demoscene embodies the part of the hacker ethic that one "can crate art and 
 Sceners create their productions not because they are useful or profitable, 
 but for the sake of the creative process and as a form of artistic expression.
 In recent years, the demoscene has begun to gain recognition beyond its own circles.
-In germany, the demoscene was even declared UNESCO Intangible Cultural Heritage in 2021. [@unesco]
+In Germany, the demoscene was even declared UNESCO Intangible Cultural Heritage in 2021. [@unesco]
 
 \printbibliography
